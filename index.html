@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Web Components | kablosuzKedi</title>
+
+    <style>
+      h3 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Film Uygulaması...</h3>
+    <movie-card
+      title="The man from earth"
+      poster="https://unutulmazfilmler.pw/wp-content/uploads/2016/07/The-Man-from-Earth.jpg"
+    >
+      <p slot="year">2001</p>
+      <p slot="type">Movie</p>
+    </movie-card>
+    <movie-card
+      title="Hababam Sınıfı 1"
+      poster="https://m.media-amazon.com/images/M/MV5BMjUwNDlmZDEtZmE0OS00OTk2LWIzYTAtYTVmYzI5MmM4ZjQ2XkEyXkFqcGdeQXVyNjUxNDU0MjM@._V1_SX300.jpg"
+    >
+      Bir Türk klasiği...
+    </movie-card>
+    <movie-card
+      title="Captain Marvel"
+      poster="https://m.media-amazon.com/images/M/MV5BMTE0YWFmOTMtYTU2ZS00ZTIxLWE3OTEtYTNiYzBkZjViZThiXkEyXkFqcGdeQXVyODMzMzQ4OTI@._V1_SX300.jpg"
+    >
+      Marvellerin sonuncusu...
+    </movie-card>
+
+    <script defer src="MovieCard.js"></script>
+  </body>
+</html>
